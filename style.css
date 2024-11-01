@@ -1,0 +1,34 @@
+
+/* //  StAuth10244: I Gaurav Patel, 000898120 certify that this material is my original work. No other person's work has been used without due acknowledgement. I have not made my work available to anyone else. */
+.dice {
+    width: 82px;
+    height: 82px;
+    border-radius: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.dice img {
+    width: 100%;
+    height: 100%;
+}
+
+.action-btn img {
+    width: 15px;  
+    height: 15px;
+}
+
+/* Rolling animation */
+.rolling {
+    animation: rollDice 1s ease-in-out;
+}
+
+@keyframes rollDice {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(180deg); }
+    100% { transform: rotate(360deg); }
+}
